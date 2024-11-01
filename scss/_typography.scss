@@ -1,0 +1,10 @@
+div, p, a, span, header, footer {
+    font-family: $ff-default;
+    line-height: 1.5;
+    font-size: $fs-default;
+}
+
+h2 {
+    font-family: $ff-accent;
+    font-size: $fs-medium;
+}

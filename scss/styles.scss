@@ -21,3 +21,21 @@ body {
     rgba(148, 187, 233, 0.3617822128851541) 100%
   );
 }
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .content-wrapper {
+    padding: 100px 0;
+    // width: 70%
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .content-wrapper {
+    width: 60%
+  }
+}

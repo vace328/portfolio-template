@@ -14,84 +14,91 @@
     <title>Ana Zlatkovic - Portfolio</title>
   </head>
   <body>
-    <header>
-      <h1 class="visuallyhidden">Ana Zlatkovic - Portfolio</h1>
-      <div class="logo-wrapper">
-        <svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
-          <circle r="45" cy="50" cx="50" fill="rgb(171, 138, 179)" />
-        </svg>
-      </div>
-      <div class="greeting">
-        <p>Hello! My name is Ana!</p>
-        <span>A web developer & designer from Novi Sad, Serbia.</span>
-      </div>
-    </header>
-    <main>
-      <section class="about">
-        <h2>About</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nisi
-          repellendus laborum quaerat impedit velit exercitationem commodi minus
-          dicta ducimus.
-        </p>
-        <p>
-          Sit amet consectetur adipisicing elit. Quos, quibusdam. Vel voluptate,
-          beatae sequi reiciendis aut fugiat vitae. Nostrum, ex?
-        </p>
-        <p>
-          Amet consectetur adipisicing elit amet consectetur adipisicing elit.
-          Quos fugiat esse sunt facere amet tempora sed sint dolor asperiores
-          commodi!
-        </p>
-      </section>
-      <section class="contact-form">
-        <h2>Contact</h2>
-        <form action="#">
-          <label for="name">Name:<sup>*</sup></label
-          ><br />
-          <input type="text" id="name" name="name" /><br />
-          <label for="email">Email:<sup>*</sup></label
-          ><br />
-          <input type="text" id="email" name="email" /><br />
-          <label for="msg">Message:<sup>*</sup></label
-          ><br />
-          <input type="submit" value="Submit" />
-        </form>
-      </section>
-      <section class="projects">
-        <h2>Projects</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum illo
-          repellat officiis ex. Laboriosam eum porro adipisci doloremque
-          debitis, cupiditate totam mollitia! Eum ad fugit id totam quis,
-          dolorum iusto consequuntur officia ex beatae, iste distinctio porro
-          quia eligendi deserunt?
-        </p>
-        <div class="projects-wrapper">
-          <div class="project"></div>
-          <div class="project"></div>
-          <div class="project"></div>
-          <div class="project"></div>
-          <div class="project"></div>
-          <div class="project"></div>
+    <div class="content-wrapper">
+      <header>
+        <h1 class="visuallyhidden">Ana Zlatkovic - Portfolio</h1>
+        <div class="header-inner-wrapper">
+            <div class="logo-wrapper">
+                <div class="img-placeholder"></div>
+              <!-- <img src="./assets/images/circle.svg" alt="circle=logo" /> -->
+            </div>
+            <div class="greeting">
+              <p>Hello! My name is Ana!</p>
+              <span>A web developer & designer from Novi Sad, Serbia.</span>
+            </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="left soc-icons">
-        <img
-          src="./assets/images/communities_icon.svg"
-          alt="social network icon 1"
-        />
-        <img
-          src="./assets/images/social_leaderboard.svg"
-          alt="social network icon 2"
-        />
-        <img src="./assets/images/globe_icon.svg" alt="social network icon 3" />
-      </div>
-      <div class="right">
-        <p>zlatkovic.ana@gmail.com</p>
-      </div>
-    </footer>
+      </header>
+      <main>
+        <section class="about">
+          <h2>About</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nisi
+            repellendus laborum quaerat impedit velit exercitationem commodi
+            minus dicta ducimus.
+          </p>
+          <p>
+            Sit amet consectetur adipisicing elit. Quos, quibusdam. Vel
+            voluptate, beatae sequi reiciendis aut fugiat vitae. Nostrum, ex?
+          </p>
+          <p>
+            Amet consectetur adipisicing elit amet consectetur adipisicing elit.
+            Quos fugiat esse sunt facere amet tempora sed sint dolor asperiores
+            commodi!
+          </p>
+        </section>
+        <section class="contact-form">
+          <h2>Contact</h2>
+          <form action="#">
+            <label for="name">Name:<sup>*</sup></label
+            ><br />
+            <input type="text" id="name" name="name" /><br />
+            <label for="email">Email:<sup>*</sup></label
+            ><br />
+            <input type="text" id="email" name="email" /><br />
+            <label for="msg">Message:<sup>*</sup></label
+            ><br />
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </section>
+        <section class="projects">
+          <h2>Projects</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum illo
+            repellat officiis ex. Laboriosam eum porro adipisci doloremque
+            debitis, cupiditate totam mollitia! Eum ad fugit id totam quis,
+            dolorum iusto consequuntur officia ex beatae, iste distinctio porro
+            quia eligendi deserunt?
+          </p>
+          <div class="projects-wrapper">
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="left soc-icons">
+          <img
+            src="./assets/images/communities_icon.svg"
+            alt="social network icon 1"
+          />
+          <img
+            src="./assets/images/social_leaderboard.svg"
+            alt="social network icon 2"
+          />
+          <img
+            src="./assets/images/globe_icon.svg"
+            alt="social network icon 3"
+          />
+        </div>
+        <div class="right">
+          <p>zlatkovic.ana@gmail.com</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

@@ -1,0 +1,23 @@
+@import "reset";
+@import "variables";
+@import "helpers";
+// @import "fonts";
+@import "icons";
+@import "typography";
+@import "header";
+@import "about";
+@import "contact";
+@import "footer";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 0.3113620448179272) 37%,
+    rgba(148, 187, 233, 0.3617822128851541) 100%
+  );
+}

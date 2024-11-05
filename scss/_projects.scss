@@ -1,0 +1,96 @@
+.projects {
+    margin-bottom: 40px;
+}
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 300px;
+  gap: 20px;
+}
+.project-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.project {
+  background-color: $accent-color1;
+//   display: flex;
+  
+  position: relative;
+  border: 4px solid $bc-dark;
+//   transition: border .3s ease-in;
+  padding: 5px;
+  cursor: pointer;
+  background-image: url("../assets/images/1.jpg");
+  background-size: cover;
+  span {
+    position: relative;
+    z-index: 10;
+    font-weight: bold;
+    color: $accent-color1;
+  }
+}
+
+.project:nth-of-type(2) {
+    background-image: url("../assets/images/2.jpg");
+}
+.project:nth-of-type(3) {
+    background-image: url("../assets/images/3.jpg");
+}
+.project:nth-of-type(4) {
+    background-image: url("../assets/images/4.jpg");
+}
+.project:nth-of-type(5) {
+    background-image: url("../assets/images/5.jpg");
+}
+.project:nth-of-type(6) {
+    background-image: url("../assets/images/6.jpg");
+}
+.project:nth-of-type(7) {
+    background-image: url("../assets/images/7.jpg");
+}
+.project:nth-of-type(8) {
+    background-image: url("../assets/images/8.jpg");
+}
+.project:nth-of-type(9) {
+    background-image: url("../assets/images/9.jpg");
+}
+.project::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $bc-dark;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: .7;
+    transition: opacity .6s;
+    pointer-events: none;
+}
+
+.project:hover::before {
+    opacity: 0; 
+}
+.project:hover>span {
+    color: $fc-lvl4;
+}
+// .project:hover {
+//     border: 8px solid $bc-dark; 
+// }
+
+
+@media only screen and (min-width: 650px) {
+  .projects-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .projects-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

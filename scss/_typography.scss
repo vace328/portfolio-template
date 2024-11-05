@@ -1,4 +1,4 @@
-div, p, a, span, header, footer {
+div, p, a, span, header, footer, input, textarea, button {
     font-family: $ff-default;
     line-height: 1.5;
     font-size: $fs-default;
@@ -7,4 +7,9 @@ div, p, a, span, header, footer {
 h2 {
     font-family: $ff-accent;
     font-size: $fs-medium;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
 }

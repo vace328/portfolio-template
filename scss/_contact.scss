@@ -1,0 +1,43 @@
+.contact-form {
+  // background-color: rgb(76, 208, 201);
+  input,
+  label,
+  textarea {
+    display: block;
+    width: 100%;
+  }
+  input,
+  textarea {
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    border: 2px solid $bc-dark;
+    border-radius: 3px;
+  }
+  .btn-send {
+    background-color: unset;
+    border: none;
+    position: relative;
+    width: 90px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+  }
+  .btn-send::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 94px;
+    height: 15px;     
+    bottom: 0px;
+    left: -2px;
+    background-color: $accent-color1;
+    z-index: -1;
+    border-radius: 100px;
+    transition: height .4s;
+  }
+
+  .btn-send:hover::before {
+    height: 27px;
+  }
+}

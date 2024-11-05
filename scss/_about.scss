@@ -1,1 +1,24 @@
+.top-sections {
+    width: 100%;
+    display: block;
+}
+.about{
+    position: relative;
+}
 
+// .about::after {
+//     display: block;
+//     position: absolute;
+//     width: 2px;
+//     height: 300px;
+//     content: "";
+//     top: 50px;
+//     right: -50px;
+//     background-color: lighten($bc-dark, 80%);
+// }
+
+@media only screen and (min-width: 800px) {
+    .top-sections {
+        width: 45%;
+    }
+}

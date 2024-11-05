@@ -68,7 +68,7 @@ table {
   position: static;
 }
 
-div, p, a, span, header, footer {
+div, p, a, span, header, footer, input, textarea, button {
   font-family: "Montserrat";
   line-height: 1.5;
   font-size: 16px;
@@ -77,6 +77,11 @@ div, p, a, span, header, footer {
 h2 {
   font-family: "Abril Fatface";
   font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
 }
 
 header {
@@ -90,8 +95,8 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-wrapper {
@@ -112,15 +117,73 @@ header {
 .greeting p {
   font-family: "Abril Fatface";
   font-size: 24px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 620px) {
   .header-inner-wrapper {
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
+  }
+  .greeting p {
+    text-align: left;
   }
 }
+.top-sections {
+  width: 100%;
+  display: block;
+}
+
+.about {
+  position: relative;
+}
+
+@media only screen and (min-width: 800px) {
+  .top-sections {
+    width: 45%;
+  }
+}
+.contact-form input,
+.contact-form label,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+}
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 20px;
+  padding: 10px 10px;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+.contact-form .btn-send {
+  background-color: unset;
+  border: none;
+  position: relative;
+  width: 90px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 100;
+  cursor: pointer;
+}
+.contact-form .btn-send::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 94px;
+  height: 15px;
+  bottom: 0px;
+  left: -2px;
+  background-color: rgb(181, 154, 207);
+  z-index: -1;
+  border-radius: 100px;
+  transition: height 0.4s;
+}
+.contact-form .btn-send:hover::before {
+  height: 27px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -136,13 +199,24 @@ body {
   padding: 40px 0;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (min-width: 768px) {
   .content-wrapper {
     padding: 100px 0;
+  }
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 @media only screen and (min-width: 1200px) {
   .content-wrapper {
     width: 60%;
+    max-width: 1300px;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,6 @@
-// $base-color: white;
-// $accent-color1: rgb(127, 194, 247);
+$bc-light: white;
+$bc-dark: black;
+$accent-color1: rgb(181, 154, 207);
 
 // $bg-light: $base-color;
 // $bg-dark: rgb(33, 33, 33);
@@ -20,7 +21,7 @@ $ff-accent: "Abril Fatface";
 $fc-lvl1: rgb(255, 255, 255);
 $fc-lvl2: rgb(119, 119, 119);
 $fc-lvl3: rgb(88, 80, 80);
-$fc-lvl4: rgb(0, 0, 0);
+$fc-lvl4: $bc-dark;
 
 
 // Abril Fatface

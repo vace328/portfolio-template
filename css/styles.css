@@ -103,12 +103,14 @@ header {
   width: 70px;
   height: 70px;
   display: block;
+  margin-right: 20px;
 }
 
 .greeting p {
   font-family: "Abril Fatface";
   font-size: 24px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 620px) {
@@ -258,6 +260,8 @@ header {
   text-align: center;
   z-index: 100;
   cursor: pointer;
+  display: block;
+  margin: 0 0 0 auto;
 }
 .contact-form .btn-send::before {
   display: block;
@@ -298,6 +302,10 @@ main {
 
 button {
   cursor: pointer;
+}
+
+section {
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
